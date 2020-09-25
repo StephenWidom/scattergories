@@ -1,0 +1,84 @@
+@import "~@blueprintjs/core/lib/scss/variables";
+
+.App
+  max-width: 1120px
+  margin: 0 auto
+  height: 100vh
+  padding: 20px 100px 0
+
+  h1
+    text-align: center
+    margin: 0 0 20px
+
+  .Categories
+    list-style: none
+    font-size: 25px
+    margin: 20px 0
+    padding: 0
+    text-align: center
+
+    li
+      margin: 5px 0
+      padding: 10px 0
+      position: relative
+
+      button
+        display: none
+        position: absolute
+        right: 20px
+        top: 10px
+        cursor: pointer
+
+      &:hover
+        background: $light-gray5
+
+        button
+          display: block
+
+
+  .Letters
+    text-align: center
+
+    .Letter
+      width: 60px
+      height: 60px
+      cursor: pointer
+      margin: 20px
+      display: inline-flex
+      justify-content: center
+      align-items: center
+      border-radius: 3px
+      font-size: 0
+      border: 1px solid $green1
+      background: $green4
+
+      &.nah
+        border: 1px solid $red1
+        background: $red4
+
+      span
+        font-size: 24px
+
+  .CurrentLetter
+    font-size: 260px
+    font-family: serif
+    text-align: center
+    font-weight: bold
+
+  .Timer
+    pointer-events: none
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 1200px
+    text-shadow: 5px 5px $gray1, 0 0 30px #000
+    font-weight: bold
+    z-index: 9
+
+    &.hurry
+      color: $red2
